@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Openspeedtest</title>
+  </head>
+  <body class="bg-black" style="display: none;">
+    <div class="min-h-screen flex justify-center items-center">
+        <div class="py-4">
+          <h1 class="text-4xl px-4 font-light">OpenSpeedtest</h1>
+          <div class="flex flex-col lg:flex-row mt-8 gap-16">
+            <div class="flex-grow flex justify-center">
+              <div class="flex flex-col justify-center items-center">
+                <div id="gauge" class="w-80 lg:w-96"></div>
+                <button id="btnMain" class="btn primary w-64">Start</button>
+              </div>
+            </div>
+            <div class="border-gray-600 flex flex-col gap-6 items-center">
+              <div class="bg-gray-900 rounded-2xl">
+                <div class="p-4">
+                  <h3 class="text-gray-400">DOWNLOAD<span class="float-right">Mpbs</span></h3>
+                  <p id="numDown" class="text-5xl font-thin mt-2">0.00</p>
+                </div>
+                <svg id="sparkDown" class="text-lightblue-500  sparkline" width="360" height="50" stroke-width="3" stroke="currentColor" fill="none"></svg>
+              </div>
+              <div class="bg-gray-900 rounded-2xl">
+                <div class="p-4">
+                  <h3 class="text-gray-400">UPLOAD<span class="float-right">Mpbs</span></h3>
+                  <p id="numUp" class="text-5xl font-thin mt-2">0.00</p>
+                </div>
+                <svg id="sparkUp" class="text-lightblue-500 sparkline" width="360" height="50" stroke-width="3" stroke="currentColor" fill="none"></svg>
+              </div>
+              <div class="flex gap-4 w-full">
+                <div class="flex-grow bg-gray-900 rounded-2xl p-4">
+                  <h3 class="text-gray-400">Ping<span class="float-right">ms</span></h3>
+                  <p id="ping" class="text-2xl font-thin mt-2">0.00</p>
+                </div>
+                <div class="flex-grow bg-gray-900 rounded-2xl p-4">
+                  <h3 class="text-gray-400">Jitter<span class="float-right">ms</span></h3>
+                  <p id="jitter" class="text-2xl font-thin mt-2">0.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-sm text-center text-gray-400 pt-3">Speedtest UI by <a href="https://tynet.eu">tynet.eu</a> for <a href="https://openspeedtest.com/">openspeedtest.com</a></p>
+        </div>
+      </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
