@@ -8,6 +8,8 @@ The new UI works great on all Screens and has a modern dark look to it.
 
 I also talked to the Openspeedtest Developer and i hope that he will use this New UI in the Future for the Speedtest.
 
+Pressing the Main Button starts a Demo Mode, you can use the Demomode Code as an example to adapt it to a Speedtest Script or something else.
+
 ### Desktop
 ![image](https://user-images.githubusercontent.com/13482963/117835774-6da0b380-b278-11eb-8557-54f392d1c48c.png)
 
